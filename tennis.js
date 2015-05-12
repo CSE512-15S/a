@@ -409,7 +409,7 @@
         .attr("text-anchor", "middle")  
         .style("font-size", "18px") 
         .style("font-weight","bold")
-        .text("Attempted Finals by Court Type");  
+        .text("Attended Finals by Court Type");  
 
 		
 		var tooltip = d3.select("#"+id)                               
