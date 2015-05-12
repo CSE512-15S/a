@@ -160,7 +160,7 @@ var svg = d3.select("body")
 
     
 var data = [ 
-	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Attended Finals"]},
+	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Legend","Player","Attended Finals"]},
 	{data:bP.partData(titles_data,3), id:'SinglesTitles', header:["Legend","Player", "Claimed Titles"]}
 ];
 
@@ -179,6 +179,6 @@ bP.draw(data, tF, svg);
 <footer>
 <p><b>Dataset</b>: by May 8, 2015.  Source: espn.com, atpworldtour.com</p>
 <p><b>Instructions</b>: hover the name or the rectangle of the finals to see who attended finals and their counts of the finals and claimed titles; <br>
-hover the name or the rectangle the players to see which finals they attended and the numbers of the attended finals and claimed titles; <br>
+hover the name or the rectangle of the players to see which finals they attended and the numbers of the attended finals and claimed titles; <br>
 hover the color in the pie charts to see the details of the players' attended finals and claimed titles by the court type.</p>
 </footer>
