@@ -1,25 +1,23 @@
 # a3-liusuw
 
-## Team Members
+## Team Member
 
 Liusu Wang liusuw@uw.edu
 
 ## Top 10 Seeded Male Tennis Players
 
-This visualzation demostrates two major portions about the top 10 seeded male tennis players. The first one is the relationship between the final match numbers of the major tennis tourments (legends) and the players, which illustrates which finals of the tourments the players attempted. The other one is the relationship between the titles of the tourments and the players, which illustrates how many titles they acctually achieved in these finals.
+This visualzation demostrates three major portions about the top 10 seeded male tennis players (2015). The first one is the relationship between the major tennis tournament (legends) finals and the players, which illustrates which finals of the tournaments these players attended. Another one is the relationship between the titles of the tourments and the players, which illustrates how many titles they acctually achieved in these finals. The last one illustrates the court types in these finals and the details of the players attended.
 
 ## Running Instructions
 
-Access my visualization at http://liusuwang.github.io/a3-liusuw/ or download this repository. I recommend using Chrome for ideal viewing.
+Access my visualization at http://cse512-15s.github.io/a3-liusuw-/ or download this repository and run python -m SimpleHTTPServer 8000 and access this from http://localhost:8000/. I recommend using Chrome for ideal viewing.
 
-Hover any name of the Legends or its Count to get the plays who attended its finals, how many times they attended, and how many titles he got.
-Hover any name of the Plays to see which the Legend finals he attended, which and how many titles he got.
 
 ## Storyboard
 
-
-
 ### initial visualization
+
+The initial visualization will be 
 
 ![initial](https://cloud.githubusercontent.com/assets/4379884/7588735/d085679a-f873-11e4-8e08-0ab7dd3b92eb.jpg)
 
