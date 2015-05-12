@@ -17,7 +17,7 @@ Access my visualization at http://cse512-15s.github.io/a3-liusuw-/ or download t
 
 ### initial visualization
 
-The initial visualization will be 
+The initial visualization will display all the relationships between the legends and the players. The sizes of the rectangles illustrate the portions of these tournament finals and the players. For example, the finals of ATP masters tournament have the most of the players attended, that rectangle appears the largest one. Same as this, the more finals a player attended, the larger his representing rectangle should be. In addition, each legend has its unique color in order to distinguish it with others. 
 
 ![initial](https://cloud.githubusercontent.com/assets/4379884/7588735/d085679a-f873-11e4-8e08-0ab7dd3b92eb.jpg)
 
