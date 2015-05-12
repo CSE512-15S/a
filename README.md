@@ -15,20 +15,26 @@ Access my visualization at http://cse512-15s.github.io/a3-liusuw-/ or download t
 
 ## Storyboard
 
-### initial visualization
+### Initial visualization
 
 The initial visualization will display all the relationships between the legends and the players. The sizes of the rectangles illustrate the portions of these tournament finals and the players. For example, the finals of ATP masters tournament have the most of the players attended, that rectangle appears the largest one. Same as this, the more finals a player attended, the larger his representing rectangle should be. In addition, each legend has its unique color in order to distinguish it with others. 
 
 ![initial](https://cloud.githubusercontent.com/assets/4379884/7588735/d085679a-f873-11e4-8e08-0ab7dd3b92eb.jpg)
 
-### hover a legend
+### Hover a legend
+If the user hover any name of the rectangle of one legend either in the "attended finals" or "claimed titles" column, the visualization will dynamically change the sizes of the players. It will only display this legend and the corresponding players who attended these finals. The same with the claimed titles as well, which should dynamically change the size.
+
 ![legend](https://cloud.githubusercontent.com/assets/4379884/7588736/d29a949c-f873-11e4-9847-e3fd162c5e86.jpg)
 
+### Hover a player
 
-### hover a player
+If the user hover any name of the rectangle of one player, the visualization will dynamically change the sizes of the legends on both "attended finals" and "claimed titles" column. It will only display this player and the corresponding legends. 
+
 ![player](https://cloud.githubusercontent.com/assets/4379884/7588738/d48ddc1e-f873-11e4-9b09-4d80f2e1cc2f.jpg)
 
-### hover colors on pie chart 
+### Hover a color on pie chart 
+This pie chart visualize the portion of each court type: clay, grass, and hard court. The color of each portion is the same with its court color in the real world. By hovering the color, the user will see the details of the players, e.g. who attended the finals and won the title on this type of court, in a sorted order.
+
 ![court type](https://cloud.githubusercontent.com/assets/4379884/7588740/d61664ca-f873-11e4-9f94-e4e9eedb412a.jpg)
 
 
