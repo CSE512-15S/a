@@ -5,7 +5,7 @@ h1{
 	text-align:center;
 }
 body{
-	width:1200px;
+	width:1600px;
 	margin:100px auto;
 }
 svg text{
@@ -14,6 +14,36 @@ svg text{
 rect{
 	shape-rendering:crispEdges;
 }
+path {  stroke: #fff; }
+path:hover {  opacity:0.9; }
+.axis {  font: 10px sans-serif; }
+.legend tr{    border-bottom:1px solid grey; }
+.legend tr:first-child{    border-top:1px solid grey; }
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.x.axis path {  display: none; }
+
+.tooltip {                                                        
+	background: #eee;                                               
+	box-shadow: 0 0 5px #999999;                                    
+	color: #333;                                                    
+	display: none;                                                  
+	font-size: 12px;                                                
+	left: 530px;                                                    
+	padding: 10px;                                                  
+	position: absolute;                                             
+	text-align: center;                                             
+	top: 250px;                                                      
+	width: 80px;                                                    
+	z-index: 10;                                                    
+}
+
 </style>
 <head> 
 <h1>
@@ -22,7 +52,7 @@ TOP 10 SEEDED MALE TENNIS PLAYERS (2015)<br><br>
 </head>
 <body>
 <script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="tennis.js"></script>
+<script src="copybiPartite.js"></script>
 <script>
 var titles_data=[
 ['Grand Slam','Rafael Nadal',20,14],
@@ -87,18 +117,50 @@ var titles_data=[
 ['ATP 250 Series','Marin Cilic',18,12]
 ];
 
-var width = 2400, height = 610, margin ={b:0, t:40, l:170, r:50};
+var freqData=[
+{Name:'Rafael Nadal',freq:{HARD:16, CLAY:46, GRASS:3}}
+,{Name:'Roger Federer',freq:{HARD:58, CLAY:11, GRASS:14}}
+,{Name:'Novak Djokovic',freq:{HARD:40, CLAY:10, GRASS:2}}
+,{Name:'Andy Murray',freq:{HARD:25, CLAY:2, GRASS:5}}
+,{Name:'Milos Raonic',freq:{HARD:6, CLAY:0, GRASS:0}}
+,{Name:'Tomáš Berdych',freq:{HARD:6, CLAY:2, GRASS:1}}
+,{Name:'Kei Nishikori',freq:{HARD:7, CLAY:2, GRASS:0}}
+,{Name:'David Ferrer',freq:{HARD:10, CLAY:12, GRASS:2}}
+,{Name:'Stan Wawrinka',freq:{HARD:51, CLAY:3, GRASS:0}}
+,{Name:'Marin Cilic',freq:{HARD:11, CLAY:1, GRASS:1}}
+];
+
+//--------------------modify attemptData----------------------------------------------------
+var attemptData=[
+{Name:'Rafael Nadal',freq:{HARD:26, CLAY:66, GRASS:3}}
+,{Name:'Roger Federer',freq:{HARD:98, CLAY:31, GRASS:24}}
+,{Name:'Novak Djokovic',freq:{HARD:40, CLAY:10, GRASS:12}}
+,{Name:'Andy Murray',freq:{HARD:45, CLAY:12, GRASS:15}}
+,{Name:'Milos Raonic',freq:{HARD:16, CLAY:0, GRASS:10}}
+,{Name:'Tomáš Berdych',freq:{HARD:16, CLAY:3, GRASS:3}}
+,{Name:'Kei Nishikori',freq:{HARD:17, CLAY:4, GRASS:0}}
+,{Name:'David Ferrer',freq:{HARD:20, CLAY:22, GRASS:3}}
+,{Name:'Stan Wawrinka',freq:{HARD:71, CLAY:4, GRASS:0}}
+,{Name:'Marin Cilic',freq:{HARD:21, CLAY:3, GRASS:2}}
+];
+var width = 1600, height = 800, margin ={b:0, t:40, l:170, r:50};
 
 var svg = d3.select("body")
 	.append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
 	.append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
 
+    
 var data = [ 
-	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Legend","Player", "Attended Finals"]},
+	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Attended Finals"]},
 	{data:bP.partData(titles_data,3), id:'SinglesTitles', header:["Legend","Player", "Claimed Titles"]}
 ];
 
-bP.draw(data, svg);
+// calculate total frequency by segment for all state.
+var tF = ['HARD','CLAY','GRASS'].map(function(d){ 
+    return {type:d, freq: d3.sum(freqData.map(function(t){ return t.freq[d];}))}; 
+}); 
+    
+bP.draw(data, tF, svg);
 
 </script>
 </body>
