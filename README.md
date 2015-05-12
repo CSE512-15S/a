@@ -21,14 +21,17 @@ Hover any name of the Plays to see which the Legend finals he attended, which an
 
 ### initial visualization
 
-![initial](https://cloud.githubusercontent.com/assets/4379884/7577497/e2f130f6-f7fd-11e4-9670-44673d170557.jpg)
+![initial](https://cloud.githubusercontent.com/assets/4379884/7588735/d085679a-f873-11e4-8e08-0ab7dd3b92eb.jpg)
 
 ### hover a legend
-![legend](https://cloud.githubusercontent.com/assets/4379884/7577501/ede52076-f7fd-11e4-9a00-fd8d05a854c3.jpg)
+![legend](https://cloud.githubusercontent.com/assets/4379884/7588736/d29a949c-f873-11e4-9847-e3fd162c5e86.jpg)
 
 
 ### hover a player
-![player](https://cloud.githubusercontent.com/assets/4379884/7577502/f067fb34-f7fd-11e4-8e3d-2619740de1f1.jpg)
+![player](https://cloud.githubusercontent.com/assets/4379884/7588738/d48ddc1e-f873-11e4-9b09-4d80f2e1cc2f.jpg)
+
+### hover colors on pie chart 
+![court type](https://cloud.githubusercontent.com/assets/4379884/7588740/d61664ca-f873-11e4-9f94-e4e9eedb412a.jpg)
 
 
 ## Development Process
