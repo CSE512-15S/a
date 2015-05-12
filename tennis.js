@@ -2,7 +2,7 @@
 	var bP={};	
 	var b=30, bb=150, height=600, buffMargin=1, minHeight=14;
 	var c1=[-150, 40], c2=[-50, 160], c3=[-15, 200]; //Column positions of labels.
-	var colors =["#3366CC", "#DC3912",  "#FF9900","#109618", "#990099", "#0099C6"];
+	var colors =["#0431B4", "#BCA9F5",  "#FF8000","#00BFFF", "#4C0B5F", "#5FB404"];
 	
 	bP.partData = function(data,p){
 		var sData={};
