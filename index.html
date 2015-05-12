@@ -135,22 +135,22 @@ var freqData=[
 ,{Name:'Tomáš Berdych',freq:{HARD:6, CLAY:2, GRASS:1}}
 ,{Name:'Kei Nishikori',freq:{HARD:7, CLAY:2, GRASS:0}}
 ,{Name:'David Ferrer',freq:{HARD:10, CLAY:12, GRASS:2}}
-,{Name:'Stan Wawrinka',freq:{HARD:51, CLAY:3, GRASS:0}}
+,{Name:'Stan Wawrinka',freq:{HARD:5, CLAY:3, GRASS:0}}
 ,{Name:'Marin Cilic',freq:{HARD:11, CLAY:1, GRASS:1}}
 ];
 
 //--------------------modify attemptData----------------------------------------------------
 var attemptData=[
-{Name:'Rafael Nadal',freq:{HARD:26, CLAY:66, GRASS:3}}
-,{Name:'Roger Federer',freq:{HARD:98, CLAY:31, GRASS:24}}
-,{Name:'Novak Djokovic',freq:{HARD:40, CLAY:10, GRASS:12}}
-,{Name:'Andy Murray',freq:{HARD:45, CLAY:12, GRASS:15}}
-,{Name:'Milos Raonic',freq:{HARD:16, CLAY:0, GRASS:10}}
-,{Name:'Tomáš Berdych',freq:{HARD:16, CLAY:3, GRASS:3}}
-,{Name:'Kei Nishikori',freq:{HARD:17, CLAY:4, GRASS:0}}
-,{Name:'David Ferrer',freq:{HARD:20, CLAY:22, GRASS:3}}
-,{Name:'Stan Wawrinka',freq:{HARD:71, CLAY:4, GRASS:0}}
-,{Name:'Marin Cilic',freq:{HARD:21, CLAY:3, GRASS:2}}
+{Name:'Rafael Nadal',freq:{HARD:34, CLAY:56, GRASS:6}}
+,{Name:'Roger Federer',freq:{HARD:78, CLAY:25, GRASS:19}}
+,{Name:'Novak Djokovic',freq:{HARD:53, CLAY:17, GRASS:5}}
+,{Name:'Andy Murray',freq:{HARD:40, CLAY:2, GRASS:6}}
+,{Name:'Milos Raonic',freq:{HARD:14, CLAY:0, GRASS:0}}
+,{Name:'Tomáš Berdych',freq:{HARD:16, CLAY:7, GRASS:3}}
+,{Name:'Kei Nishikori',freq:{HARD:10, CLAY:4, GRASS:0}}
+,{Name:'David Ferrer',freq:{HARD:20, CLAY:27, GRASS:2}}
+,{Name:'Stan Wawrinka',freq:{HARD:8, CLAY:9, GRASS:1}}
+,{Name:'Marin Cilic',freq:{HARD:16, CLAY:4, GRASS:2}}
 ];
 var width = 1600, height = 680, margin ={b:0, t:40, l:170, r:50};
 
@@ -160,15 +160,18 @@ var svg = d3.select("body")
 
     
 var data = [ 
-	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Legend","Player","Attended Finals"]},
+	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Attended Finals"]},
 	{data:bP.partData(titles_data,3), id:'SinglesTitles', header:["Legend","Player", "Claimed Titles"]}
 ];
 
 // calculate total frequency by segment for all state.
 var tF = ['HARD','CLAY','GRASS'].map(function(d){ 
     return {type:d, freq: d3.sum(freqData.map(function(t){ return t.freq[d];}))}; 
-}); 
-    
+});
+ 
+var tF_attemped = ['HARD','CLAY','GRASS'].map(function(d){ 
+    return {type:d, freq: d3.sum(attemptData.map(function(t){ return t.freq[d];}))}; 
+});    
 bP.draw(data, tF, svg);
 
 </script>
@@ -179,4 +182,3 @@ bP.draw(data, tF, svg);
 hover the name or the rectangle the players to see which finals they attended and the numbers of the attended finals and claimed titles; <br>
 hover the color in the pie charts to see the details of the players' attended finals and claimed titles by the court type.</p>
 </footer>
-
