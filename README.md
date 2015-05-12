@@ -33,11 +33,16 @@ If the user hover any name of the rectangle of one player, the visualization wil
 ![player](https://cloud.githubusercontent.com/assets/4379884/7588738/d48ddc1e-f873-11e4-9b09-4d80f2e1cc2f.jpg)
 
 ### Hover a color on pie chart 
+
 This pie chart visualize the portion of each court type: clay, grass, and hard court. The color of each portion is the same with its court color in the real world. By hovering the color, the user will see the details of the players, e.g. who attended the finals and won the title on this type of court, in a sorted order.
 
 ![court type](https://cloud.githubusercontent.com/assets/4379884/7588740/d61664ca-f873-11e4-9f94-e4e9eedb412a.jpg)
 
 
+## Changes between Storyboard and the Final Implementation 
+
+To be more clear, I seperated the "attended finals - players - claimed titles" visualization into two different ones. These two visualization used the same logic in the implementation. I added the numbers to the charts to be more clear, e.g. numbers and percentages of the legends, the count of the titles that the players won. So does the pie chart, it has more descriptions by numbers. In addition, by hovering the court type on the pie chart, the user can see more details, e.g. how many titles of the players won and their percentages.
+
 ## Development Process
 
-For the development process, I browsed and analyzed the initial data set, and found the most feasible and interesting part. and storyboard idea together, then reconvened later to discuss the next set of goals once we had the basics of the original storyboard programmed. In all, I spent approximately 110 hours putting this visualization together. A significant portion of time was spent getting familiar with javascript and D3. 
+For the development process, I collected and analyzed the initial data set. I defined the audience to be general tennis lovers who usually do not learn too deep into tennis and the players. In this way, I cleaned up the dataset and found the most feasible and probably the part that the audience care about the most - the finals, tiles, court types, and the players. I brainstormed the idea, iteratively designed many storyboards, and selected the above ones here. I did research on D3 and learned it from the online tutorials, and then started with the basic ones. Later I started putting more and intergrated them together. During this project, I also feel more comfortable about debugging on the Chrome DevTools. In all, I spent approximately 110 hours putting this visualization together. A significant portion of time was spent getting familiar with javascript and D3, and secondly was the iterative design process. 
