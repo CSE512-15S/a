@@ -243,42 +243,42 @@
             .text( function(d) { 
                     if (d.data.type == "HARD" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10 + "%)" +"\r\n" 
-                        +"\r\n" +"Roger Federer  58" + " (" + Math.round(1000 * 58/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  51" + " (" + Math.round(1000 * 51/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 40" + " (" + Math.round(1000 * 40/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  25" + " (" + Math.round(1000 * 25/sum)/10 + "%)" 
-                        +"\r\n" +"Rafael Nadal  16" + " (" + Math.round(1000 * 16/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 10" + " (" + Math.round(1000 * 10/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  7" + " (" + Math.round(1000 * 7/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych 6" + " (" + Math.round(1000 * 6/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 6" + " (" + Math.round(1000 * 6/sum)/10 + "%)" ;
+                        +"\r\n" +"Roger Federer  58" + " (" + Math.round(1000 * 58/230)/10 + "%)" 
+                        +"\r\n" +"Stan Wawrinka  51" + " (" + Math.round(1000 * 51/230)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 40" + " (" + Math.round(1000 * 40/230)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  25" + " (" + Math.round(1000 * 25/230)/10 + "%)" 
+                        +"\r\n" +"Rafael Nadal  16" + " (" + Math.round(1000 * 16/230)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/230)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 10" + " (" + Math.round(1000 * 10/230)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  7" + " (" + Math.round(1000 * 7/230)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych 6" + " (" + Math.round(1000 * 6/230)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 6" + " (" + Math.round(1000 * 6/230)/10 + "%)" ;
                     }
                     else if (d.data.type == "CLAY" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10  + "%)" +"\r\n" 
-                        +"\r\n" +"Rafael Nadal  46" + " (" + Math.round(1000 * 46/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 12" + " (" + Math.round(1000 * 12/sum)/10 + "%)" 
-                        +"\r\n" +"Roger Federer 11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 10" + " (" + Math.round(1000 * 10/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych  2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" ;
+                        +"\r\n" +"Rafael Nadal  46" + " (" + Math.round(1000 * 46/89)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 12" + " (" + Math.round(1000 * 12/89)/10 + "%)" 
+                        +"\r\n" +"Roger Federer 11" + " (" + Math.round(1000 * 11/89)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 10" + " (" + Math.round(1000 * 10/89)/10 + "%)" 
+                        +"\r\n" +"Stan Wawrinka  3" + " (" + Math.round(1000 * 3/89)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/89)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  3" + " (" + Math.round(1000 * 3/89)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych  2" + " (" + Math.round(1000 * 2/89)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  2" + " (" + Math.round(1000 * 2/89)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/89)/10 + "%)" ;
                     }
                     else if (d.data.type == "GRASS" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10 + "%)"+"\r\n" 
-                        +"\r\n" +"Roger Federer 14" + " (" + Math.round(1000 * 14/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  5" + " (" + Math.round(1000 * 5/sum)/10 + "%)" 
-                        +"\r\n" +"Rafael Nadal  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych  1" + " (" + Math.round(1000 * 1/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  1" + " (" + Math.round(1000 * 1/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" ;
+                        +"\r\n" +"Roger Federer 14" + " (" + Math.round(1000 * 14/28)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  5" + " (" + Math.round(1000 * 5/28)/10 + "%)" 
+                        +"\r\n" +"Rafael Nadal  3" + " (" + Math.round(1000 * 3/28)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 2" + " (" + Math.round(1000 * 2/28)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 2" + " (" + Math.round(1000 * 2/28)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych  1" + " (" + Math.round(1000 * 1/28)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  1" + " (" + Math.round(1000 * 1/28)/10 + "%)" 
+                        +"\r\n" +"Stan Wawrinka  0" + " (" + Math.round(1000 * 0/28)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  0" + " (" + Math.round(1000 * 0/28)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/28)/10 + "%)" ;
                     };                      
                 })
         
@@ -443,14 +443,14 @@
         .attr("y", (-14))
         .attr("text-anchor", "middle")  
         .style("font-size", "13px") 
-        .text("89");  
+        .text("151");  
 		
 		piesvg.append("text")
         .attr("x", (-65))             
         .attr("y", 2)
         .attr("text-anchor", "middle")  
         .style("font-size", "13px") 
-        .text("25.6%");    		
+        .text("31.2%");    		
 
 		piesvg.append("text")
         .attr("x", 48)             
@@ -464,14 +464,14 @@
         .attr("y", 16)
         .attr("text-anchor", "middle")  
         .style("font-size", "13px") 
-        .text("230");  
+        .text("289");  
 		
 		piesvg.append("text")
         .attr("x", 48)             
         .attr("y", 32)
         .attr("text-anchor", "middle")  
         .style("font-size", "13px") 
-        .text("66.3%");  
+        .text("59.7%");  
 		
 		piesvg.append("text")
         .attr("x", (-25))             
@@ -485,14 +485,14 @@
         .attr("y", (-74))
         .attr("text-anchor", "middle")  
         .style("font-size", "13px") 
-        .text("28"); 
+        .text("44"); 
 		
 		piesvg.append("text")
         .attr("x", (-16))             
         .attr("y", (-58))
         .attr("text-anchor", "middle")  
         .style("font-size", "12px") 
-        .text("8.1%"); 	
+        .text("9.1%"); 	
 		
         var sum = caltotal(data);             
 
@@ -500,42 +500,42 @@
             .text( function(d) { 
                     if (d.data.type == "HARD" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10 + "%)" +"\r\n" 
-                        +"\r\n" +"Roger Federer  58" + " (" + Math.round(1000 * 58/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  51" + " (" + Math.round(1000 * 51/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 40" + " (" + Math.round(1000 * 40/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  25" + " (" + Math.round(1000 * 25/sum)/10 + "%)" 
-                        +"\r\n" +"Rafael Nadal  16" + " (" + Math.round(1000 * 16/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 10" + " (" + Math.round(1000 * 10/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  7" + " (" + Math.round(1000 * 7/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych 6" + " (" + Math.round(1000 * 6/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 6" + " (" + Math.round(1000 * 6/sum)/10 + "%)" ;
+                        +"\r\n" +"Roger Federer  78" + " (" + Math.round(1000 * 78/289)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 53" + " (" + Math.round(1000 * 53/289)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  40" + " (" + Math.round(1000 * 40/289)/10 + "%)" 
+                        +"\r\n" +"Rafael Nadal  34" + " (" + Math.round(1000 * 34/289)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 20" + " (" + Math.round(1000 * 20/289)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych 16" + " (" + Math.round(1000 * 16/289)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  16" + " (" + Math.round(1000 * 16/289)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 14" + " (" + Math.round(1000 * 14/289)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  10" + " (" + Math.round(1000 * 10/289)/10 + "%)" 
+						+"\r\n" +"Stan Wawrinka  8" + " (" + Math.round(1000 * 8/289)/10 + "%)" ;
                     }
                     else if (d.data.type == "CLAY" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10  + "%)" +"\r\n" 
-                        +"\r\n" +"Rafael Nadal  46" + " (" + Math.round(1000 * 46/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 12" + " (" + Math.round(1000 * 12/sum)/10 + "%)" 
-                        +"\r\n" +"Roger Federer 11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 10" + " (" + Math.round(1000 * 10/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  11" + " (" + Math.round(1000 * 11/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych  2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" ;
+                        +"\r\n" +"Rafael Nadal  56" + " (" + Math.round(1000 * 56/151)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 27" + " (" + Math.round(1000 * 27/151)/10 + "%)" 
+                        +"\r\n" +"Roger Federer 25" + " (" + Math.round(1000 * 25/151)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 17" + " (" + Math.round(1000 * 17/151)/10 + "%)" 
+                        +"\r\n" +"Stan Wawrinka  9" + " (" + Math.round(1000 * 9/151)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych  7" + " (" + Math.round(1000 * 7/151)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  4" + " (" + Math.round(1000 * 4/151)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  4" + " (" + Math.round(1000 * 4/151)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  2" + " (" + Math.round(1000 * 2/151)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/151)/10 + "%)" ;
                     }
                     else if (d.data.type == "GRASS" ) {
                         return d.data.type + " court: " + d.data.freq + " (" + Math.round(1000 * d.data.freq / sum) / 10 + "%)"+"\r\n" 
-                        +"\r\n" +"Roger Federer 14" + " (" + Math.round(1000 * 14/sum)/10 + "%)" 
-                        +"\r\n" +"Andy Murray  5" + " (" + Math.round(1000 * 5/sum)/10 + "%)" 
-                        +"\r\n" +"Rafael Nadal  3" + " (" + Math.round(1000 * 3/sum)/10 + "%)" 
-                        +"\r\n" +"Novak Djokovic 2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"David Ferrer 2" + " (" + Math.round(1000 * 2/sum)/10 + "%)" 
-                        +"\r\n" +"Tomáš Berdych  1" + " (" + Math.round(1000 * 1/sum)/10 + "%)" 
-                        +"\r\n" +"Marin Cilic  1" + " (" + Math.round(1000 * 1/sum)/10 + "%)" 
-                        +"\r\n" +"Stan Wawrinka  0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" 
-                        +"\r\n" +"Kei Nishikori  0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" 
-                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/sum)/10 + "%)" ;
+                        +"\r\n" +"Roger Federer 19" + " (" + Math.round(1000 * 19/44)/10 + "%)" 
+                        +"\r\n" +"Andy Murray  6" + " (" + Math.round(1000 * 6/44)/10 + "%)" 
+                        +"\r\n" +"Rafael Nadal  6" + " (" + Math.round(1000 * 6/44)/10 + "%)" 
+                        +"\r\n" +"Novak Djokovic 5" + " (" + Math.round(1000 * 5/44)/10 + "%)" 
+                        +"\r\n" +"Tomáš Berdych  3" + " (" + Math.round(1000 * 3/44)/10 + "%)" 
+                        +"\r\n" +"David Ferrer 2" + " (" + Math.round(1000 * 2/44)/10 + "%)" 
+                        +"\r\n" +"Marin Cilic  2" + " (" + Math.round(1000 * 2/44)/10 + "%)" 
+                        +"\r\n" +"Stan Wawrinka  1" + " (" + Math.round(1000 * 1/44)/10 + "%)" 
+                        +"\r\n" +"Kei Nishikori  0" + " (" + Math.round(1000 * 0/44)/10 + "%)" 
+                        +"\r\n" +"Milos Raonic 0" + " (" + Math.round(1000 * 0/44)/10 + "%)" ;
                     };                      
                 })
         
@@ -546,7 +546,6 @@
         } 
 
         function caltotal(d){
-  
 			var total = d3.sum(data.map(function(d) {               
               return d.freq;                                       
             }));
@@ -639,7 +638,7 @@
                 var pC = drawPieChart(tF, biP.id); // create the pie-chart.
             };
             if (biP.id == "SinglesTitles" ) {
-                var pC = drawPieChart2(tF, biP.id); // create the pie-chart.
+                var pC = drawPieChart2(tF_attemped, biP.id); // create the pie-chart.
             };
         
 			var visData = visualize(biP.data);
