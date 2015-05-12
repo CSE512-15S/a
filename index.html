@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+h1{
+	text-align:center;
+}
+body{
+	width:1200px;
+	margin:100px auto;
+}
+svg text{
+	font-size:12px;
+}
+rect{
+	shape-rendering:crispEdges;
+}
+</style>
+<head> 
+<h1>
+TOP 10 SEEDED MALE TENNIS PLAYERS <br><br>
+</h1>
+</head>
+<body>
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="tennis.js"></script>
+<script>
+var titles_data=[
+['Grand Slam','Rafael Nadal',20,14],
+['Year-End Tour','Rafael Nadal',2,0],
+['ATP Masters','Rafael Nadal',40,27],
+['Olympics Games','Rafael Nadal',1,1],
+['ATP 500 Series','Rafael Nadal',18,15],
+['ATP 250 Series','Rafael Nadal',12,8],
+['Grand Slam','Roger Federer',25,17],
+['Year-End Tour','Roger Federer',9,6],
+['ATP Masters','Roger Federer',40,23],
+['Olympics Games','Roger Federer',1,0],
+['ATP 500 Series','Roger Federer',21,15],
+['ATP 250 Series','Roger Federer',32,8],
+['Grand Slam','Novak Djokovic',15,8],
+['Year-End Tour','Novak Djokovic',4,4],
+['ATP Masters','Novak Djokovic',33,23],
+['Olympics Games','Novak Djokovic',0,0],
+['ATP 500 Series','Novak Djokovic',13,11],
+['ATP 250 Series','Novak Djokovic',10,6],
+['Grand Slam','Andy Murray',8,2],
+['Year-End Tour','Andy Murray',0,0],
+['ATP Masters','Andy Murray',13,9],
+['Olympics Games','Andy Murray',1,1],
+['ATP 500 Series','Andy Murray',5,4],
+['ATP 250 Series','Andy Murray',20,16],
+['Grand Slam','Stanislas Wawrinka',1,1],
+['Year-End Tour','Stanislas Wawrinka',0,0],
+['ATP Masters','Stanislas Wawrinka',3,1],
+['Olympics Games','Stanislas Wawrinka',0,0],
+['ATP 500 Series','Stanislas Wawrinka',3,1],
+['ATP 250 Series','Stanislas Wawrinka',11,6],
+['Grand Slam','Milos Raonic',0,0],
+['Year-End Tour','Milos Raonic',0,0],
+['ATP Masters','Milos Raonic',2,0],
+['Olympics Games','Milos Raonic',0,0],
+['ATP 500 Series','Milos Raonic',6,1],
+['ATP 250 Series','Milos Raonic',6,5],
+['Grand Slam','Tomáš Berdych',1,0],
+['Year-End Tour','Tomáš Berdych',0,0],
+['ATP Masters','Tomáš Berdych',4,1],
+['Olympics Games','Tomáš Berdych',0,0],
+['ATP 500 Series','Tomáš Berdych',7,3],
+['ATP 250 Series','Tomáš Berdych',15,6],
+['Grand Slam','Nikolay_Davydenko',0,0],
+['Year-End Tour','Nikolay Davydenko',1,1],
+['ATP Masters','Nikolay Davydenko',3,3],
+['Olympics Games','Nikolay Davydenko',0,0],
+['ATP 500 Series','Nikolay Davydenko',1,1],
+['ATP 250 Series','Nikolay Davydenko',22,16],
+['Grand Slam','Fernando González',1,0],
+['Year-End Tour','Fernando González',0,0],
+['ATP Masters','Fernando González',2,0],
+['Olympics Games','Fernando González',1,0],
+['ATP 500 Series','Fernando González',1,0],
+['ATP 250 Series','Fernando González',15,11],
+['Grand Slam','Juan Martín del Potro',1,1],
+['Year-End Tour','Juan Martín del Potro',1,0],
+['ATP Masters','Juan Martín del Potro',3,0],
+['Olympics Games','Juan Martín del Potro',0,0],
+['ATP 500 Series','Juan Martín del Potro',10,8],
+['ATP 250 Series','Juan Martín del Potro',10,9]
+];
+
+var width = 2400, height = 610, margin ={b:0, t:40, l:170, r:50};
+
+var svg = d3.select("body")
+	.append("svg").attr('width',width).attr('height',(height+margin.b+margin.t))
+	.append("g").attr("transform","translate("+ margin.l+","+margin.t+")");
+
+var data = [ 
+	{data:bP.partData(titles_data,2), id:'SinglesFinals', header:["Legend","Player", "Attended Finals"]},
+	{data:bP.partData(titles_data,3), id:'SinglesTitles', header:["Legend","Player", "Claimed Titles"]}
+];
+
+bP.draw(data, svg);
+
+</script>
+</body>
