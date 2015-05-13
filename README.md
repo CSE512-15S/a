@@ -10,7 +10,7 @@ This visualzation demostrates three major portions about the top 10 seeded male 
 
 ## Running Instructions
 
-Access my visualization at http://cse512-15s.github.io/a3-liusuw-/ or download this repository and run python -m SimpleHTTPServer 8000 and access this from http://localhost:8000/. I recommend using Chrome for ideal viewing.
+Access my visualization at http://cse512-15s.github.io/a3-liusuw/ or download this repository and run python -m SimpleHTTPServer 8000 and access this from http://localhost:8000/. I recommend using Chrome for ideal viewing.
 
 
 ## Storyboard
